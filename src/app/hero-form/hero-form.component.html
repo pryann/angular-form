@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="form-group">
-    <button type="submit" [disabled]="!heroForm.form.valid || isSubmitted">Submit</button>
+    <button type="submit" [disabled]="!heroForm['form'].valid || isSubmitted">Submit</button>
     <p *ngIf="isSubmitted">
       The form is submitted. <br>
       Model: {{ model | json }}
